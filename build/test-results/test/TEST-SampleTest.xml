@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SampleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-15T11:13:35" hostname="KOZACHEKYURY" time="14.234">
+  <properties/>
+  <testcase name="shouldCheckSecondForm()" classname="SampleTest" time="14.234"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[сент. 15, 2023 2:13:44 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
