@@ -16,9 +16,7 @@ public class SampleTest {
     private Platform platform = Platform.Android;
 
     private AppiumDriver driver;
-    private String textToSpace = " ";
-    private String textToActivity = "Hello UiAutomator!";
-    private String textToSet = "Netology";
+
 
     PageObjects pageObjects;
 
@@ -45,14 +43,14 @@ public class SampleTest {
 
         pageObjects.clickForm.isDisplayed();
         pageObjects.clickForm.click();
-        pageObjects.clickForm.sendKeys(textToSpace);
+        pageObjects.clickForm.sendKeys(pageObjects.getTextToSpace());
 
         pageObjects.pressButton.isDisplayed();
         pageObjects.pressButton.click();
 
         pageObjects.seeResult.isDisplayed();
 
-        Assertions.assertEquals(textToActivity, pageObjects.seeResult.getText());
+        Assertions.assertEquals(pageObjects.getTextToActivity(), pageObjects.seeResult.getText());
 
 //        WebElement el1 = driver.findElement(By.id("ru.netology.testing.uiautomator:id/userInput"));
 //        el1.isDisplayed();
@@ -71,14 +69,14 @@ public class SampleTest {
 
         pageObjects.clickForm.isDisplayed();
         pageObjects.clickForm.click();
-        pageObjects.clickForm.sendKeys(textToSet);
+        pageObjects.clickForm.sendKeys(pageObjects.getTextToSet());
 
         pageObjects.pressButton.isDisplayed();
         pageObjects.pressButton.click();
 
         pageObjects.seeResultXpath.isDisplayed();
 
-        Assertions.assertEquals(textToSet, pageObjects.seeResultXpath.getText());
+        Assertions.assertEquals(pageObjects.getTextToSet(), pageObjects.seeResultXpath.getText());
 
 //        WebElement el1 = driver.findElement(By.id("ru.netology.testing.uiautomator:id/userInput"));
 //        el1.isDisplayed();
