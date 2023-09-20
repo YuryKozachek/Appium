@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SampleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-18T09:32:23" hostname="KOZACHEKYURY" time="13.258">
+<testsuite name="SampleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-20T13:23:15" hostname="KOZACHEKYURY" time="13.532">
   <properties/>
-  <testcase name="shouldCheckSecondForm()" classname="SampleTest" time="13.258"/>
+  <testcase name="shouldCheckFirstForm()" classname="SampleTest" time="13.532"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[сент. 18, 2023 12:32:32 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[сент. 20, 2023 4:23:24 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

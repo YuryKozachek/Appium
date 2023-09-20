@@ -39,7 +39,7 @@ public class SampleTest {
     }
 
     @Test
-    public void shouldCheckFirstForm() {
+    public void shouldCheckFirstFormOnSpace() {
 
         pageObjects.clickForm.isDisplayed();
         pageObjects.clickForm.click();
@@ -50,7 +50,7 @@ public class SampleTest {
 
         pageObjects.seeResult.isDisplayed();
 
-        Assertions.assertEquals(pageObjects.getTextToActivity(), pageObjects.seeResult.getText());
+        Assertions.assertNotEquals(pageObjects.getTextToSpace(), pageObjects.seeResult.getText());
 
 //        WebElement el1 = driver.findElement(By.id("ru.netology.testing.uiautomator:id/userInput"));
 //        el1.isDisplayed();
@@ -71,12 +71,12 @@ public class SampleTest {
         pageObjects.clickForm.click();
         pageObjects.clickForm.sendKeys(pageObjects.getTextToSet());
 
-        pageObjects.pressButton.isDisplayed();
-        pageObjects.pressButton.click();
+        pageObjects.pressButtonActivity.isDisplayed();
+        pageObjects.pressButtonActivity.click();
 
-        pageObjects.seeResultXpath.isDisplayed();
+        pageObjects.textResultActivity.isDisplayed();
 
-        Assertions.assertEquals(pageObjects.getTextToSet(), pageObjects.seeResultXpath.getText());
+        Assertions.assertEquals(pageObjects.getTextToSet(), pageObjects.textResultActivity.getText());
 
 //        WebElement el1 = driver.findElement(By.id("ru.netology.testing.uiautomator:id/userInput"));
 //        el1.isDisplayed();
